@@ -1,19 +1,60 @@
 <!DOCTYPE html>
 
 <title>Tuck Shop</title>
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="stylesheet.css">
 
 
 <h1>Our Items</h1>
 
 
-<img class="indexLogo" title="Orewa College Logo" alt="OC LOGO" src="logo.png">\
+<img class="indexLogo" title="Orewa College Logo" alt="OC LOGO" src="logo.png">
+
+
+<div class="item">
+  <img src="pie.jpg" alt="frontview" width="400" style="margin-right: 40px;">
+  
+    <img src="cookie.jpg" alt="sideview" width="400">
+  <div class="item-overlay top"></div>
+</div>
+
 
 
 
 <nav class="reviewNav">
 <a href="mailto:alex.wardega@gmail.com?subject=Review">
-Write Review</a> 
+Send Feedback</a> 
 </nav>    
+
+<nav class="reviewNav">
+<a class="popup" onclick="myFunction()">Price List
+  <span class="popuptext" id="myPopup">
+      <ul class="reviewList">
+	<li>Samosa - $4</li>
+	<li>Wedges - $3.50</li>
+	<li>Burgers - $4</li>
+	<li>Lasagne - $4</li>
+	<li>Noodles - $3.50</li>
+	<li>Pizzas - $3</li>
+	<li>Quiche - $3.50</li>
+	<li>Garlic Bread - $1.50</li>
+	<li>Muffins - $3.50</li>
+	<li>Canned Drinks</li>
+	<li>Aqa Lite - $2.50</li>
+	<li>Charlies Honest Fizz - $2.50</li>
+	<li>Sparkling Oh - $2.50</li>
+	<li>Ice Tea - $4</li>
+	<li>Water - $4</li>
+	<li>Flavoured Water - $4</li>
+</ul>
+</span>
+</a>
+</nav>
+
+<script>
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
 
